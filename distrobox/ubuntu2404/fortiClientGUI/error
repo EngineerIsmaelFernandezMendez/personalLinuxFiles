@@ -1,0 +1,310 @@
+eifm@eifm-deb:~/git/eifm/linuxScripts/distrobox/ubuntu2404$ ./installFortiClientGUI.sh 
+--2025-10-31 10:58:39--  http://mirrors.kernel.org/ubuntu/pool/universe/libd/libdbusmenu/libdbusmenu-gtk4_16.04.1+18.10.20180917-0ubuntu8_amd64.deb
+Resolving mirrors.kernel.org (mirrors.kernel.org)... 139.178.88.99, 2604:1380:45e3:2400::1
+Connecting to mirrors.kernel.org (mirrors.kernel.org)|139.178.88.99|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://mirrors.edge.kernel.org/ubuntu/pool/universe/libd/libdbusmenu/libdbusmenu-gtk4_16.04.1+18.10.20180917-0ubuntu8_amd64.deb [following]
+--2025-10-31 10:58:40--  http://mirrors.edge.kernel.org/ubuntu/pool/universe/libd/libdbusmenu/libdbusmenu-gtk4_16.04.1+18.10.20180917-0ubuntu8_amd64.deb
+Resolving mirrors.edge.kernel.org (mirrors.edge.kernel.org)... 213.196.21.55, 2a01:60a::1994:3:14
+Connecting to mirrors.edge.kernel.org (mirrors.edge.kernel.org)|213.196.21.55|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 30880 (30K) [application/octet-stream]
+Saving to: ‘libdbusmenu-gtk4_16.04.1+18.10.20180917-0ubuntu8_amd64.deb’
+
+libdbusmenu-gtk4_16.04.1+18.10.20180917-0ubuntu8_amd 100%[=====================================================================================================================>]  30.16K  --.-KB/s    in 0.1s    
+
+2025-10-31 10:58:40 (298 KB/s) - ‘libdbusmenu-gtk4_16.04.1+18.10.20180917-0ubuntu8_amd64.deb’ saved [30880/30880]
+
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+wget is already the newest version (1.21.4-1ubuntu4.1).
+libappindicator1 is already the newest version (12.10.1+20.10.20200706.1-0ubuntu1).
+libdbusmenu-gtk4 is already the newest version (16.04.1+18.10.20180917-0ubuntu8).
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ iptables : Depends: libip4tc2 (= 1.8.10-3ubuntu2) but it is not going to be installed
+            Depends: libip6tc2 (= 1.8.10-3ubuntu2) but it is not going to be installed
+            Depends: libnetfilter-conntrack3 (>= 1.0.6) but it is not going to be installed
+            Depends: libnfnetlink0 (>= 1.0.2) but it is not going to be installed
+            Depends: libnftnl11 (>= 1.1.6) but it is not going to be installed
+            Recommends: nftables but it is not going to be installed
+ libappindicator3-1 : Depends: libdbusmenu-gtk3-4 (>= 0.5.90) but it is not going to be installed
+ libsecret-1-0 : Depends: libsecret-common but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Correcting dependencies... Done
+The following additional packages will be installed:
+  iptables libappindicator3-1 libdbusmenu-gtk3-4 libip4tc2 libip6tc2 libnetfilter-conntrack3 libnfnetlink0 libnftables1 libnftnl11 libnss3-tools libsecret-1-0 libsecret-common libxss1 nftables
+Suggested packages:
+  firewalld kmod indicator-application
+The following NEW packages will be installed:
+  iptables libappindicator3-1 libdbusmenu-gtk3-4 libip4tc2 libip6tc2 libnetfilter-conntrack3 libnfnetlink0 libnftables1 libnftnl11 libnss3-tools libsecret-1-0 libsecret-common libxss1 nftables
+0 upgraded, 14 newly installed, 0 to remove and 0 not upgraded.
+1 not fully installed or removed.
+Need to get 1,777 kB of archives.
+After this operation, 7,156 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 libdbusmenu-gtk3-4 amd64 18.10.20180917~bzr492+repack1-3.1ubuntu5 [27.6 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble/universe amd64 libappindicator3-1 amd64 12.10.1+20.10.20200706.1-0ubuntu5 [23.3 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble/main amd64 libxss1 amd64 1:1.2.3-1build3 [7,204 B]
+Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 libsecret-common all 0.21.4-1build3 [4,962 B]
+Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 libsecret-1-0 amd64 0.21.4-1build3 [116 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 libnss3-tools amd64 2:3.98-1build1 [615 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 libip4tc2 amd64 1.8.10-3ubuntu2 [23.3 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble/main amd64 libip6tc2 amd64 1.8.10-3ubuntu2 [23.7 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble/main amd64 libnfnetlink0 amd64 1.0.2-2build1 [14.8 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 libnetfilter-conntrack3 amd64 1.0.9-6build1 [45.2 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble/main amd64 libnftnl11 amd64 1.2.6-2build1 [66.0 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble/main amd64 iptables amd64 1.8.10-3ubuntu2 [381 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble/main amd64 libnftables1 amd64 1.0.9-1build1 [358 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble/main amd64 nftables amd64 1.0.9-1build1 [69.8 kB]
+Fetched 1,777 kB in 2s (1,071 kB/s)  
+Selecting previously unselected package libdbusmenu-gtk3-4:amd64.
+(Reading database ... 37999 files and directories currently installed.)
+Preparing to unpack .../00-libdbusmenu-gtk3-4_18.10.20180917~bzr492+repack1-3.1ubuntu5_amd64.deb ...
+Unpacking libdbusmenu-gtk3-4:amd64 (18.10.20180917~bzr492+repack1-3.1ubuntu5) ...
+Selecting previously unselected package libappindicator3-1.
+Preparing to unpack .../01-libappindicator3-1_12.10.1+20.10.20200706.1-0ubuntu5_amd64.deb ...
+Unpacking libappindicator3-1 (12.10.1+20.10.20200706.1-0ubuntu5) ...
+Selecting previously unselected package libxss1:amd64.
+Preparing to unpack .../02-libxss1_1%3a1.2.3-1build3_amd64.deb ...
+Unpacking libxss1:amd64 (1:1.2.3-1build3) ...
+Selecting previously unselected package libsecret-common.
+Preparing to unpack .../03-libsecret-common_0.21.4-1build3_all.deb ...
+Unpacking libsecret-common (0.21.4-1build3) ...
+Selecting previously unselected package libsecret-1-0:amd64.
+Preparing to unpack .../04-libsecret-1-0_0.21.4-1build3_amd64.deb ...
+Unpacking libsecret-1-0:amd64 (0.21.4-1build3) ...
+Selecting previously unselected package libnss3-tools.
+Preparing to unpack .../05-libnss3-tools_2%3a3.98-1build1_amd64.deb ...
+Unpacking libnss3-tools (2:3.98-1build1) ...
+Selecting previously unselected package libip4tc2:amd64.
+Preparing to unpack .../06-libip4tc2_1.8.10-3ubuntu2_amd64.deb ...
+Unpacking libip4tc2:amd64 (1.8.10-3ubuntu2) ...
+Selecting previously unselected package libip6tc2:amd64.
+Preparing to unpack .../07-libip6tc2_1.8.10-3ubuntu2_amd64.deb ...
+Unpacking libip6tc2:amd64 (1.8.10-3ubuntu2) ...
+Selecting previously unselected package libnfnetlink0:amd64.
+Preparing to unpack .../08-libnfnetlink0_1.0.2-2build1_amd64.deb ...
+Unpacking libnfnetlink0:amd64 (1.0.2-2build1) ...
+Selecting previously unselected package libnetfilter-conntrack3:amd64.
+Preparing to unpack .../09-libnetfilter-conntrack3_1.0.9-6build1_amd64.deb ...
+Unpacking libnetfilter-conntrack3:amd64 (1.0.9-6build1) ...
+Selecting previously unselected package libnftnl11:amd64.
+Preparing to unpack .../10-libnftnl11_1.2.6-2build1_amd64.deb ...
+Unpacking libnftnl11:amd64 (1.2.6-2build1) ...
+Selecting previously unselected package iptables.
+Preparing to unpack .../11-iptables_1.8.10-3ubuntu2_amd64.deb ...
+Unpacking iptables (1.8.10-3ubuntu2) ...
+Selecting previously unselected package libnftables1:amd64.
+Preparing to unpack .../12-libnftables1_1.0.9-1build1_amd64.deb ...
+Unpacking libnftables1:amd64 (1.0.9-1build1) ...
+Selecting previously unselected package nftables.
+Preparing to unpack .../13-nftables_1.0.9-1build1_amd64.deb ...
+Unpacking nftables (1.0.9-1build1) ...
+Setting up libip4tc2:amd64 (1.8.10-3ubuntu2) ...
+Setting up libdbusmenu-gtk3-4:amd64 (18.10.20180917~bzr492+repack1-3.1ubuntu5) ...
+Setting up libip6tc2:amd64 (1.8.10-3ubuntu2) ...
+Setting up libnftnl11:amd64 (1.2.6-2build1) ...
+Setting up libappindicator3-1 (12.10.1+20.10.20200706.1-0ubuntu5) ...
+Setting up libnfnetlink0:amd64 (1.0.2-2build1) ...
+Setting up libxss1:amd64 (1:1.2.3-1build3) ...
+Setting up libsecret-common (0.21.4-1build3) ...
+Setting up libnss3-tools (2:3.98-1build1) ...
+Setting up libnftables1:amd64 (1.0.9-1build1) ...
+Setting up nftables (1.0.9-1build1) ...
+Setting up libsecret-1-0:amd64 (0.21.4-1build3) ...
+Setting up libnetfilter-conntrack3:amd64 (1.0.9-6build1) ...
+Setting up iptables (1.8.10-3ubuntu2) ...
+update-alternatives: using /usr/sbin/iptables-legacy to provide /usr/sbin/iptables (iptables) in auto mode
+update-alternatives: using /usr/sbin/ip6tables-legacy to provide /usr/sbin/ip6tables (ip6tables) in auto mode
+update-alternatives: using /usr/sbin/iptables-nft to provide /usr/sbin/iptables (iptables) in auto mode
+update-alternatives: using /usr/sbin/ip6tables-nft to provide /usr/sbin/ip6tables (ip6tables) in auto mode
+update-alternatives: using /usr/sbin/arptables-nft to provide /usr/sbin/arptables (arptables) in auto mode
+update-alternatives: using /usr/sbin/ebtables-nft to provide /usr/sbin/ebtables (ebtables) in auto mode
+Setting up forticlient (7.4.3.1736) ...
+xargs: Cannot open input file ‘/proc/2652/environ’: Permission denied
+=====================================================================
+If fortitray is not auto-started,
+try running /opt/forticlient/start-fortitray-launcher.sh as non-root.
+=====================================================================
+gtk-update-icon-cache: Cache file created successfully.
+/var/lib/dpkg/info/forticlient.postinst: line 151: update-desktop-database: command not found
+Created symlink /etc/systemd/system/multi-user.target.wants/forticlient.service → /usr/lib/systemd/system/forticlient.service.
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.6) ...
+--2025-10-31 10:59:13--  https://links.fortinet.com/forticlient/deb/vpnagent
+Resolving links.fortinet.com (links.fortinet.com)... 154.52.2.213
+Connecting to links.fortinet.com (links.fortinet.com)|154.52.2.213|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://filestore.fortinet.com/forticlient/downloads/forticlient_vpn_7.4.3.1736_amd64.deb [following]
+--2025-10-31 10:59:14--  https://filestore.fortinet.com/forticlient/downloads/forticlient_vpn_7.4.3.1736_amd64.deb
+Resolving filestore.fortinet.com (filestore.fortinet.com)... 149.5.234.132
+Connecting to filestore.fortinet.com (filestore.fortinet.com)|149.5.234.132|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 120970710 (115M) [application/octet-stream]
+Saving to: ‘vpnagent’
+
+vpnagent                                             100%[=====================================================================================================================>] 115.37M  12.7MB/s    in 10s     
+
+2025-10-31 10:59:25 (11.1 MB/s) - ‘vpnagent’ saved [120970710/120970710]
+
+(Reading database ... 38339 files and directories currently installed.)
+Preparing to unpack vpnagent ...
+Unpacking forticlient (7.4.3.1736) over (7.4.3.1736) ...
+Setting up forticlient (7.4.3.1736) ...
+xargs: Cannot open input file ‘/proc/2652/environ’: Permission denied
+=====================================================================
+If fortitray is not auto-started,
+try running /opt/forticlient/start-fortitray-launcher.sh as non-root.
+=====================================================================
+gtk-update-icon-cache: Cache file created successfully.
+/var/lib/dpkg/info/forticlient.postinst: line 151: update-desktop-database: command not found
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+eifm@eifm-deb:~/git/eifm/linuxScripts/distrobox/ubuntu2404$ forticlient
+CLI interface for FortiClient modules.
+
+Usage:
+forticlient [module]
+
+Available Modules:
+gui         Launch FortiClient GUI
+help        Help about any command
+version     Display FortiClient, Engine, and Signature version info
+vpn         VPN CLI interface.
+
+Flags:
+  -h, --help   help for forticlient
+
+Use "forticlient [module] --help" for more information about a module.
+eifm@eifm-deb:~/git/eifm/linuxScripts/distrobox/ubuntu2404$ vpnagent
+bash: vpnagent: command not found
+eifm@eifm-deb:~/git/eifm/linuxScripts/distrobox/ubuntu2404$ forticlient gui
+[23689:1031/110006.754932:ERROR:bus.cc(407)] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+ERROR: Failed to add module "FortiClient ZTNA". Probable cause : "/opt/forticlient/libcertd.so: cannot open shared object file: No such file or directory".
+11:00:07.223 › Failed to add libcertd.so: Error: Command failed: /usr/bin/modutil -add "FortiClient ZTNA" -dbdir sql:/home/eifm/.pki/nssdb -libfile /opt/forticlient/libcertd.so -force
+ERROR: Failed to add module "FortiClient ZTNA". Probable cause : "/opt/forticlient/libcertd.so: cannot open shared object file: No such file or directory".
+
+Gtk-Message: 11:00:07.307: Failed to load module "canberra-gtk-module"
+Gtk-Message: 11:00:07.312: Failed to load module "canberra-gtk-module"
+[23689:1031/110007.348923:ERROR:bus.cc(407)] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[23689:1031/110007.349034:ERROR:bus.cc(407)] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+11:00:07.500 › Server init() port number is 
+11:00:07.502 › File does not exist.
+11:00:07.503 › Fail to retrieve port number from file.
+11:00:08.507 › Server init() port number is 
+11:00:08.508 › File does not exist.
+11:00:08.509 › Fail to retrieve port number from file.
+11:00:09.511 › Server init() port number is 
+11:00:09.512 › File does not exist.
+11:00:09.513 › Fail to retrieve port number from file.
+11:00:10.517 › Main process - Websocket open ws://127.0.0.1:/websocket
+11:00:10.524 › WindowManager handlePossibleProtocolLauncherArgs argv=["/opt/forticlient/gui/FortiClient"]
+11:00:10.525 › WindowManager handleCreateMainWindow
+Error: m {
+  [Symbol(kTarget)]: k {
+    _events: [Object: null prototype] {
+      open: [Function],
+      close: [Function],
+      message: [Function],
+      error: [Function]
+    },
+    _eventsCount: 4,
+    _maxListeners: undefined,
+    _binaryType: 'nodebuffer',
+    _closeCode: 1006,
+    _closeFrameReceived: false,
+    _closeFrameSent: false,
+    _closeMessage: <Buffer >,
+    _closeTimer: null,
+    _errorEmitted: true,
+    _extensions: {},
+    _paused: false,
+    _protocol: '',
+    _readyState: 2,
+    _receiver: null,
+    _sender: null,
+    _socket: null,
+    _bufferedAmount: 0,
+    _isServer: false,
+    _redirects: 0,
+    _autoPong: true,
+    _url: 'ws://127.0.0.1/websocket',
+    _req: null,
+    onreconnect: undefined,
+    onmaximum: undefined,
+    [Symbol(kCapture)]: false
+  },
+  [Symbol(kType)]: 'error',
+  [Symbol(kError)]: Error: connect ECONNREFUSED 127.0.0.1:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 80
+  },
+  [Symbol(kMessage)]: 'connect ECONNREFUSED 127.0.0.1:80'
+}
+Closed! h {
+  [Symbol(kTarget)]: k {
+    _events: [Object: null prototype] {
+      open: [Function],
+      close: [Function],
+      message: [Function],
+      error: [Function]
+    },
+    _eventsCount: 4,
+    _maxListeners: undefined,
+    _binaryType: 'nodebuffer',
+    _closeCode: 1006,
+    _closeFrameReceived: false,
+    _closeFrameSent: false,
+    _closeMessage: <Buffer >,
+    _closeTimer: null,
+    _errorEmitted: true,
+    _extensions: {},
+    _paused: false,
+    _protocol: '',
+    _readyState: 3,
+    _receiver: null,
+    _sender: null,
+    _socket: null,
+    _bufferedAmount: 0,
+    _isServer: false,
+    _redirects: 0,
+    _autoPong: true,
+    _url: 'ws://127.0.0.1/websocket',
+    _req: null,
+    onreconnect: undefined,
+    onmaximum: undefined,
+    [Symbol(kCapture)]: false
+  },
+  [Symbol(kType)]: 'close',
+  [Symbol(kCode)]: 1006,
+  [Symbol(kReason)]: '',
+  [Symbol(kWasClean)]: false
+}
+11:00:10.558 › MAIN MainWindow - createWindow Platform detected: fedora
+11:00:10.602 › web-contents-created contents.id=1
+11:00:10.618 › Saml - init
+11:00:10.619 › Saml - listenSamlLoginRequest
+11:00:10.621 › Server init() port number is 
+11:00:10.621 › File does not exist.
+11:00:10.622 › Fail to retrieve port number from file.
+[23689:1031/110010.928983:ERROR:nss_util.cc(357)] After loading Root Certs, loaded==false: NSS error code: -8018
+11:00:11.624 › Server init() port number is 
+11:00:11.625 › File does not exist.
+11:00:11.626 › Fail to retrieve port number from file.
+11:00:12.628 › Server init() port number is 
+11:00:12.629 › File does not exist.
+11:00:12.629 › Fail to retrieve port number from file.
+11:00:14.239 › MAIN did-finish-load
+11:00:14.240 › MAIN ready-to-show
+11:00:42.417 › WindowManager WindowManager - handleWindowClosed
+11:00:42.417 › WindowManager WindowManager - all windows are destroyed. quit the app.
+eifm@eifm-deb:~/git/eifm/linuxScripts/distrobox/ubuntu2404$ 
+
