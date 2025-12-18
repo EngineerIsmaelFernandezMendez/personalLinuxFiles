@@ -1,0 +1,8 @@
+info: Not creating home directory `/usr/share/grafana'.
+### NOT starting on installation, please execute the following statements to configure grafana to start automatically using systemd
+ sudo /bin/systemctl daemon-reload
+ sudo /bin/systemctl enable grafana-server
+### You can start grafana-server by executing
+ sudo /bin/systemctl start grafana-server
+Processing triggers for man-db (2.12.0-4build2) ...
+eifm@eifm-deb:~/git/eifm/linuxScripts/distrobox/ubun
