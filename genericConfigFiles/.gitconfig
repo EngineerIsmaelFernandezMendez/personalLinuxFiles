@@ -1,0 +1,9 @@
+[user]
+    name = Ismael Fernández Méndez
+    email = engineerismaelfernandezmendez@gmail.com 
+
+[includeIf "gitdir:/home/eifm/git/ifm562/"]
+    path = ~/.gitconfig-ifm562
+
+[includeIf "gitdir:/home/eifm/git/eifm/"]
+    path = ~/.gitconfig-eifm
